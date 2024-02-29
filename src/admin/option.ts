@@ -6,10 +6,11 @@ const DEFAULT_ADMIN = {
 };
 export const authenticationOption: AuthenticationOptions = {
   authenticate: async (email, password) => {
-    if (email === DEFAULT_ADMIN.email && password === DEFAULT_ADMIN.password) {
-      return Promise.resolve(DEFAULT_ADMIN);
-    }
-    return null;
+    // if (email === DEFAULT_ADMIN.email && password === DEFAULT_ADMIN.password) {
+    //   return Promise.resolve(DEFAULT_ADMIN);
+    // }
+    // return null;
+    return true;
   },
   cookiePassword: "senha-de-cookie",
 };
